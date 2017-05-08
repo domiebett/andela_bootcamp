@@ -15,3 +15,8 @@ class Test_Prime_Numbers(unittest.TestCase):
 
 	def input_is_not_less_than_zero(self):
 		self.assertEqual(self.prime_numbers.prime_numbers(-1), "Input is less than zero")
+
+	def result_is_a_list(self):
+		self.assertEqual(isinstance(self.prime_numbers.prime_numbers(10), list), True)
+
+	
