@@ -4,7 +4,7 @@ def prime_numbers(n):
     number=0;
     divider=2;
 
-    while number!=n:
+    while divider!=n:
     
         prime_number=True;
 
@@ -17,5 +17,3 @@ def prime_numbers(n):
             number+=1
             print(divider)
         divider+=1
-
-prime_numbers(20)
