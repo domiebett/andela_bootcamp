@@ -1,19 +1,30 @@
 import math
 
-def prime_numbers(n):
-    number=0;
-    divider=2;
+class Prime_Numbers(object):
 
-    while divider!=n:
-    
-        prime_number=True;
+    def prime_numbers(self, n):
 
-        for i in range(2, int(math.sqrt(divider)+1)):
-            if divider%i==0:
-                prime_number=False;
-                break;
+        if isinstance(n, str):
+            return "Not an integer!!"
 
-        if (prime_number):
-            number+=1
-            print(divider)
-        divider+=1
+        if n < 0:
+            return "Input is less than zero"
+
+        number=0
+        divider=2
+        prime_list = []
+        while divider!=n:
+        
+            prime_number=True;
+
+            for i in range(2, int(math.sqrt(divider)+1)):
+                if divider%i==0:
+                    prime_number=False;
+                    break;
+
+            if (prime_number):
+                number+=1
+                prime_list.append(divider)
+            divider+=1
+
+        return prime_list
