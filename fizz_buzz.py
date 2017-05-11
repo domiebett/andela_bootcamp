@@ -20,4 +20,3 @@ def fizz_buzz(n):
     output = output + "Buzz"
 
   return output
-
