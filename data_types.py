@@ -30,3 +30,4 @@ def data_type(value):
   #checks if value is none and returns string "no value"
   elif value is None:
     return "no value"
+
