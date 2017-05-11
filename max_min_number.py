@@ -2,6 +2,7 @@ def find_max_min(numbers):
 
 	#initial values for maximum and minimum numbers initialised to
 	#first item in a list.
+
 	max = numbers[0]
 	min = numbers[0]
 
